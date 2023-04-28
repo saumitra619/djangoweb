@@ -2,7 +2,7 @@
     "version": 2.0,
     "builds": [
         {
-            "src": "djangoweb/wsgi.py",
+            "src": "mysite/wsgi.py",
             "use": "@vercel/python",
             "config": {
                 "maxLambdaSize": "15mb",
@@ -13,7 +13,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "djangoweb/wsgi.py"
+            "dest": "mysite/wsgi.py"
         },
         {
             "src": "/static/(.*)",
